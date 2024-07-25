@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/RealEstateWebApp.styles.css" asp-append-version="true"/>
 </head>
-<body>
+<body class="overflow-scroll">
 <header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -42,16 +42,53 @@
 
     </nav>
 </header>
-<div class="container">
-    <main role="main" class="pb-3">
-        @RenderBody()
-    </main>
-</div>
+<main role="main" class="pb-5 m-auto">
+    @RenderBody()
+</main>
 
-<footer class="border-top footer text-muted">
+<footer class="border-top footer text-muted bg-black p-5">
+    <div class="row text-white d-flex justify-content-center text-wrap">
+        <div class="col-md-4">
+            <h5>DANE ADRESOWE</h5>
+            <h6>Gdańsk Sopot Gdynia Nieruchomości Magdalena Litwin</h6>
+        </div>
+        <div class="col-md-4">
+            <h5>DANE KONTAKTOWE</h5>
+            <h6><a href="tel: +48 501 490 743" class="text-decoration-none text-white">+48 501 490 743</a></h6>
+            <h6><a href="kontakt@gsg-nieruchomosci.pl" class="text-decoration-none text-white">kontakt@gsg-nieruchomosci.pl</a></h6>
+            <h6><a href="https://www.facebook.com/GSG-Nieruchomo%C5%9Bci-156206046543110/" class="text-decoration-none text-white">Facebook</a></h6>
+        </div>
+        <div class="col-md-4 small">
+            <h5>MENU</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <a class="nav-link text-white p-0" asp-area="" asp-controller="Home" asp-action="Index">Strona główna</a>
+                </li>
+                <li>
+                    <a class="nav-link text-white p-0" asp-area="" asp-controller="Home" asp-action="Privacy">Oferty</a>
+                </li>
+                <li>
+                    <a class="nav-link text-white p-0" asp-area="" asp-controller="Home" asp-action="Privacy">Zgłoś ofertę nieruchomości</a>
+                </li>
+                <li>
+                    <a class="nav-link text-white p-0" asp-area="" asp-controller="Home" asp-action="Privacy">Referencje</a>
+                </li>
+                <li>
+                    <a class="nav-link text-white p-0" asp-area="" asp-controller="Home" asp-action="AboutUs">O nas</a>
+                </li>
+                <li>
+                    <a class="nav-link text-white p-0" asp-area="" asp-controller="Home" asp-action="Privacy">Kontakt</a>
+                </li>
+                <li>
+                    <a class="nav-link text-white p-0" asp-area="" asp-controller="Home" asp-action="Privacy">Polityka prywatności</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <div class="container">
         &copy; 2024 - RealEstateWebApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
     </div>
+
 </footer>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
