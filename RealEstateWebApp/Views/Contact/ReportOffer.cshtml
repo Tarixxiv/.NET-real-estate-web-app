@@ -1,0 +1,58 @@
+
+@{
+    ViewData["Title"] = "ReportOffer";
+}
+<form>
+    <div class="flex-fill container mt-3">
+
+        <h2>ZGŁÓŚ OFERTĘ</h2>
+
+        
+        <div class="row my-2">
+            <div class="col-4">
+                <input class="form-control col-4" placeholder="Imię i nazwisko"/>
+            </div>
+            <div class="col-4">
+                <input class="form-control" placeholder="E-mail"/>
+            </div>
+            <div class="col-4">
+                <input class="form-control" placeholder="Telefon"/>
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-6">
+                <select class="form-select" name="EstateType">
+                    <option selected>Typ nieruchomości</option>
+                    <option>Dom</option>
+                    <option>Mieszkanie</option>
+                    <option>Działka</option>
+                    <option>Komercyjny</option>
+                </select>
+
+            </div>
+            <div class="col-6">
+                <select class="form-select" name="TransactionType">
+                    <option selected>Typ transakcji</option>
+                    <option>Sprzedaż</option>
+                    <option>Wynajem</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="row my-2">
+            <div class="col-8">
+                <textarea class="form-control" placeholder="Opis i uwagi" rows="10"></textarea>
+            </div>
+            <div class="col-4">
+                <input class="form-control mb-2" placeholder="Lokalizacja"/>
+                <input class="form-control my-2" placeholder="Powierzchnia [ m² ]"/>
+                <input class="form-control my-2" placeholder="Cena"/>
+                <input class="form-control my-2" placeholder="Jaki dziś dzień tygodnia (zabezpieczenie)"/>
+
+            </div>
+        </div>
+        <label><input type="checkbox"/> Oświadczam, że wyrażam zgodę na przetwarzanie moich danych osobowych przez GSG NIERUCHOMOŚCI z siedzibą w Gdańsku zgodnie z RODO w celu udzielenia mi informacji w zakresie złożonego zapytania o ofertę. Szczegółowe dane na temat przetwarzania Państwa danych osobowych znajdują się w Polityce Prywatności i RODO * </label>
+        <button type="submit" class="btn btn-primary">WYŚLIJ ZGŁOSZENIE</button>
+    </div>
+</form>
+
